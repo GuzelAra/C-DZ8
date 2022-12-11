@@ -7,10 +7,10 @@
 // 15 18
 
 
-int [,] FillMatrix(int rows, int columns)    // заполнение матрицы
+int [,] FillMatrix(int rows, int columns)   
 {
     int [,] matrix = new int [rows, columns];
-    for (int i=0; i<matrix.GetLength(0); i++)   // гетденгс узнает длину массива, 0 отв за строки, 1 за столбцы
+    for (int i=0; i<matrix.GetLength(0); i++)   
     {
         for (int j=0; j<matrix.GetLength(1); j++)
         {
@@ -20,8 +20,7 @@ int [,] FillMatrix(int rows, int columns)    // заполнение матри�
     return matrix;
 }
 
-void PrintMatrix(int[,] matrix)  //печать матрицы
-{
+void PrintMatrix(int[,] matrix)  
     for (int i=0; i<matrix.GetLength(0); i++)
     {
         for (int j=0; j<matrix.GetLength(1); j++)
@@ -34,7 +33,7 @@ void PrintMatrix(int[,] matrix)  //печать матрицы
 
 Console.WriteLine("Введите размернось первого двумерного массива m * n");
 Console.WriteLine("Введите m: ");
-int m = Convert.ToInt32(Console.ReadLine());  // ввод матрицы
+int m = Convert.ToInt32(Console.ReadLine());  
 Console.WriteLine("Введите n: ");
 int n = Convert.ToInt32(Console.ReadLine());
 int[,] matrix1 = FillMatrix(m,n);
@@ -42,7 +41,7 @@ PrintMatrix(matrix1);
 Console.WriteLine();
 Console.WriteLine("Введите размернось второго двумерного массива a * b");
 Console.WriteLine("Введите a: ");
-int a = Convert.ToInt32(Console.ReadLine());  // ввод матрицы
+int a = Convert.ToInt32(Console.ReadLine());  
 Console.WriteLine("Введите b: ");
 int b = Convert.ToInt32(Console.ReadLine());
 int[,] matrix2 = FillMatrix(a,b);
