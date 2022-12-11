@@ -16,7 +16,7 @@ void FillArraySpiral(int[,] array, int n)
      for (int e = 0; e < n * n; e++)
     {
         int k = 0;
-        do { array[i, j++] = value++; } while (++k < n - 1);
+        for (k = 0; k < n - 1; k++) array[i, j++] = value++;
         for (k = 0; k < n - 1; k++) array[i++, j] = value++;
         for (k = 0; k < n - 1; k++) array[i, j--] = value++;
         for (k = 0; k < n - 1; k++) array[i--, j] = value++;
